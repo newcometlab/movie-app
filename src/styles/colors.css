@@ -1,0 +1,15 @@
+/* For the darkmode, or tailwindcss urgly and tedious `:dark` */
+:root {
+  --primary: #ffffff;
+  --secondary: #27273c;
+
+  --style-color-cyan: #13ffc6;
+  --style-color-indigo: #8696ff;
+  --style-color-rose: #ff7fb4;
+  --style-color-rose-800: #ff7fb4cc;
+  --style-color-slate: #adaab9;
+  --style-color-gray: #6f6f6f;
+  --style-color-gray-800: #6f6f6fcc;
+  --style-color-blue: #2e365e;
+  --style-color-orange: #fff493;
+}
