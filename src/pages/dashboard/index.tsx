@@ -3,18 +3,18 @@ import Select from '../../components/select'
 import { RootState } from '../../store/store'
 import { useAppSelector } from '../../store/hooks'
 import { useEffect, useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { ratingRanges } from '../../utils/constants'
 
 export default function Dashboard() {
   const movies = useAppSelector((state: RootState) => state.movies.movies)
+  const [searchParams] = useSearchParams()
 
   const navigate = useNavigate()
-  const urlParams = new URLSearchParams(window.location.search)
-  const category = urlParams.get('category')
-  const year = urlParams.get('year')
-  const rating = urlParams.get('rating')
-  const query = urlParams.get('query')
+  const category = searchParams.get('category')
+  const year = searchParams.get('year')
+  const rating = searchParams.get('rating')
+  const query = searchParams.get('query')
 
   const [allCategories, setAllCategories] = useState<string[]>([])
   const [allYears, setAllYears] = useState<number[]>([])
