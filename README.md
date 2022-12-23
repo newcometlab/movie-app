@@ -26,7 +26,7 @@ In order to complete this test, the developer must have the following frameworks
 5. Webpack
 6. Anything else required
 
-### 2.2  Problem Definition
+### 2.2 Problem Definition
 
 The scope of the task is to build a build a movie website where the end-user can
 
@@ -52,3 +52,35 @@ The scope of the task is to build a build a movie website where the end-user can
   - In the landing page movies are presented with their thumbnail image.
   - Create a proper data structure in your service layer which should support all the requirement. Perform tests with chrome dev tool to ensure SSR is working properly.
 - Make sure the design supports different devices such as mobile, tablet and desktop.
+
+## 3. Installation
+
+1. Clone the repository locally with the git command:
+
+   ```sh
+   git clone https://github.com/newcometlab/movie-app
+   ```
+
+2. Install NPM packages:
+
+   ```sh
+   yarn
+   ```
+
+3. Build the app with command:
+
+   ```sh
+   yarn bundle:client
+   ```
+
+   ```sh
+   yarn bundle:server
+   ```
+
+4. Run the app with command:
+
+   ```sh
+   yarn serve
+   ```
+
+5. Open a new tab http://localhost:4000
